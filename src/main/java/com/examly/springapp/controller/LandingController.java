@@ -1,12 +1,12 @@
 package com.examly.springapp.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class LandingController {
     @GetMapping("/")
     public String home() {
-        return "Backend is running!";
+        return "index";
     }
 }
